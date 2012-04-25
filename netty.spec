@@ -36,6 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 # Create the directory structure required to lay down our files
 # common
 install -d -m 755 $RPM_BUILD_ROOT/usr/share/java/
+ln -s /usr/share/java/netty-%{version}.jar $RPM_BUILD_ROOT/usr/share/java/netty.jar
 install -m 644 dist/lib/netty-%{version}.jar $RPM_BUILD_ROOT/usr/share/java/
 
 %clean
@@ -43,6 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 /usr/share/java/netty-%{version}.jar
+/usr/share/java/netty.jar
 
 
 %changelog
