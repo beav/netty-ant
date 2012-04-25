@@ -8,7 +8,7 @@ Summary: netty lib
 Group: Internet/Applications
 License: Apache
 Version: 3.3.1
-Release: 2%{?dist}
+Release: 3%{?dist}
 URL: http://netty.io/
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -48,6 +48,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed Apr 25 2012 Chris Duryee (beav) <cduryee@redhat.com>
+- add symlink (cduryee@redhat.com)
+
 * Mon Mar 19 2012 Chris Duryee (beav) <cduryee@redhat.com>
 - new package built with tito
 
